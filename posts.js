@@ -9,7 +9,7 @@ if (document.getElementById("userWelcome") && user) {
     "👤 Welcome " + user;
 }
 
-// AUTO LOAD
+// ...AUTO LOAD
 loadPosts();
 
 function loadPosts() {
