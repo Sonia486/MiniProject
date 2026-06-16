@@ -1,4 +1,4 @@
-// ELEMENTS
+// ....ELEMENTS
 let nameInput = document.getElementById("name");
 let emailInput = document.getElementById("email");
 let passwordInput = document.getElementById("password");
