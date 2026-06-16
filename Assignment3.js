@@ -6,7 +6,7 @@ if (document.getElementById("userWelcome") && user) {
     "👤 Welcome " + user;
 }
 
-// THEME TOGGLE
+// THEME.. TOGGLE
 function toggleTheme() {
     document.body.classList.toggle("dark-mode");
 
