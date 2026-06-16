@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posts Page</title>
+
+    <link rel="stylesheet" href="Assignment3.css">
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="topbar">
+    <h3 id="userWelcome"></h3>
+
+    <button onclick="toggleTheme()" id="themeBtn">
+        🌙 Dark Mode
+    </button>
+</div>
+
+<!-- BACK BUTTON -->
+<a href="Assignment3.html">
+    <button class="backBtn">← Home</button>
+</a>
+
+<!-- POSTS -->
+<section id="posts" class="posts">
+    <h2>Posts Viewer</h2>
+
+    <div id="postsContainer"></div>
+
+    <p id="errorMsg"></p>
+</section>
+
+<script src="posts.js"></script>
+
+</body>
+</html>

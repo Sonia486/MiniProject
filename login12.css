@@ -1,0 +1,194 @@
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+/* main layout */
+.main {
+    display: flex;
+    height: 100vh;
+}
+
+/* image side */
+.image-side {
+    width: 50%;
+}
+
+.image-side img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* form side */
+.form-side {
+    width: 50%;
+    padding: 60px;
+    background: white;
+    color: black;
+}
+
+/* heading */
+h2 {
+    margin-bottom: 50px;
+    font-size: 250%;
+}
+
+/* labels */
+label {
+    display: block;
+    margin-top: 15px;
+    text-align: left;
+}
+
+/* inputs */
+input {
+    width: 80%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 6px; /* added */
+}
+
+/* checkbox */
+.terms {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.terms input {
+    width: auto;
+    margin-right: 8px;
+}
+
+/* SIGN UP BUTTON */
+#signupBtn {
+    width: 70%;
+    padding: 12px;
+    margin-top: 15px;
+    background: rgb(65, 102, 65);
+    border: none;
+    border-radius: 8px; /* added */
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#signupBtn:disabled {
+    background: rgb(65, 102, 65) ;
+    color: white;
+    font-style: bold;
+}
+
+/* click effect */
+#signupBtn:active {
+    transform: scale(0.97);
+    opacity: 0.8;
+}
+
+/* info text */
+.info {
+    margin-top: 0px;
+}
+
+/* social buttons */
+.social {
+    display: flex;
+    gap: 12px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+/* GOOGLE + APPLE BUTTONS */
+.social button {
+    width: 45%;              /* width reduced */
+    padding: 8px;
+    background: white;       /* no color */
+    color: black;
+    border: 1px solid black; /* thin border */
+    border-radius: 8px;      /* rounded */
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+/* click effect */
+.social button:active {
+    transform: scale(0.96);
+    opacity: 0.7;
+}
+
+/* sign in */
+.signin-text {
+    margin-top: 0px;
+}
+
+.link {
+    color: blue;
+    cursor: pointer;
+}
+p{
+    padding: 25px;
+    padding-left: 35%;
+}
+/* ========================= */
+/* 📱 MOBILE (max 768px) */
+/* ========================= */
+@media (max-width: 768px) {
+
+    .main {
+        flex-direction: column; /* stack */
+        height: auto;
+    }
+
+    .image-side {
+        width: 100%;
+        height: 200px; /* smaller image */
+    }
+
+    .form-side {
+        width: 100%;
+        padding: 30px;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    #signupBtn {
+        width: 100%;
+    }
+
+    .social {
+        flex-direction: column; /* buttons below */
+    }
+
+    .social button {
+        width: 100%;
+    }
+}
+
+/* ========================= */
+/* 📲 TABLET (769px - 1024px) */
+/* ========================= */
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    .form-side {
+        padding: 40px;
+    }
+
+    .image-side {
+        width: 50%;
+    }
+
+    .form-side {
+        width: 50%;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    #signupBtn {
+        width: 100%;
+    }
+}
